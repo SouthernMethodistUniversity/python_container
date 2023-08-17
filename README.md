@@ -14,10 +14,14 @@ Template repository for containerized Python environments on SMU HPC Systems.
 6. The container can be used via `module use <path_to_module_file_directory> &&
    module load <module_file_name>`.`
 
-## Building the Container Manually
+## Example Commands for Working with Docker Manually
+
+Several options, including:
 
 `docker build -t module:latest .`
-`docker build --platform linux/amd64 -t module:latest .`
-`docker build --no-cache --progress=plain -t module:latest .`
-`docker run --entrypoint /bin/bash -it module:latest`
 
+`docker build --platform linux/amd64 -t module:latest .`
+
+`docker build --no-cache --progress=plain -t module:latest .`
+
+`docker run --entrypoint /bin/bash -it module:latest`
